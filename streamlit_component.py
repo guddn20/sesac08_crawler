@@ -68,31 +68,31 @@ st.video("https://youtu.be/dosbhD_1LIo")
 # st.audio(audio_binary)
 
 # =====================================================
-# #상호작용
-# #1. 버튼 누르기
-# # if를 사용해서 버튼이 눌리면 할 동작 지정
-# if st.button("눌러줘요"):
-#     st.balloons()
-# #2. 체크박스
-# if st.checkbox("체크해주세요"):
-#     st.info("동의합니다.")
+#상호작용
+#1. 버튼 누르기
+# if를 사용해서 버튼이 눌리면 할 동작 지정
+if st.button("눌러줘요"):
+    st.balloons()
+#2. 체크박스
+if st.checkbox("체크해주세요"):
+    st.info("동의합니다.")
 
-# #3. 라디오박스
-# radio_button = st.radio("선택하세요", ["쉬기", "공부하기"])
+#3. 라디오박스
+radio_button = st.radio("선택하세요", ["쉬기", "공부하기"])
 
-# if radio_button == "쉬기":
-#     st.success("쉬세요!")
-# else:
-#     st.warning("정말로?")
-#     st.button("버튼을 다시 한 번 눌러주세요.")
+if radio_button == "쉬기":
+    st.success("쉬세요!")
+else:
+    st.warning("정말로?")
+    st.button("버튼을 다시 한 번 눌러주세요.")
 
-# #4. select box
-# city = st.selectbox("거주지를 고르세요",
-#                     ['영등포구','강서구','구로구'])
+#4. select box
+city = st.selectbox("거주지를 고르세요",
+                    ['영등포구','강서구','구로구'])
 
-# # 다중선택
-# job = st.multiselect('희망 직무를 선택하세요',
-#                      ['데이터분석', '인공지능개발', 'AX자동화'])
+# 다중선택
+job = st.multiselect('희망 직무를 선택하세요',
+                     ['데이터분석', '인공지능개발', 'AX자동화'])
 # ---------------------------------------------------------------------
 
 # 텍스트 입력
